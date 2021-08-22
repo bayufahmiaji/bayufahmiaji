@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -16,17 +16,16 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- tobii css -->
+        <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-        <!-- Animation -->
-        <link href="css/aos.css" rel="stylesheet" type="text/css" />
         <!-- Slider -->               
         <link rel="stylesheet" href="css/tiny-slider.css"/> 
         <!-- Main Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-
     </head>
 
     <body>
@@ -46,11 +45,17 @@
             <div class="container">
                 <!-- Logo container-->
                 <a class="logo" href="index.html">
-                    <img src="images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                    <span class="logo-light-mode">
+                        <img src="images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
                     <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
                 </a>
                 <div class="buy-button">
-                    <a href="https://1.envato.market/4n73n" target="_blank" class="btn btn-primary">Buy Now</a>
+                    <a href="https://1.envato.market/4n73n" target="_blank">
+                        <div class="btn btn-primary login-btn-primary">Buy Now</div>
+                        <div class="btn btn-light login-btn-light">Buy Now</div>
+                    </a>
                 </div><!--end login button-->
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -69,7 +74,7 @@
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
+                    <ul class="navigation-menu nav-light">
                         <li><a href="index.html" class="sub-menu-item">Home</a></li>
                         <li class="has-submenu parent-parent-menu-item">
                             <a href="javascript:void(0)">Landing</a><span class="menu-arrow"></span>
@@ -305,445 +310,608 @@
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
-        
+
         <!-- Hero Start -->
-        <section class="bg-half-170 bg-light d-table w-100">
+        <section class="bg-half-170 pb-0 bg-primary d-table w-100" style="background: url('images/bg2.png') center center;">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="title-heading text-center mt-5 pt-3">
-                            <div class="alert alert-light alert-pills" role="alert" data-aos="fade-up" data-aos-duration="1000">
-                                <span class="badge rounded-pill bg-success me-1">Support</span>
-                                <span class="content"> Customer Support 24/7</span>
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="title-heading">
+                            <h4 class="text-white-50">We are creative</h4>
+                            <h4 class="heading text-white mb-3 title-dark"> Best IT Solution <br> Company </h4>
+                            <p class="para-desc text-white-50">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                            <div class="mt-4 pt-2">
+                                <a href="javascript:void(0)" class="btn btn-light">Get Started</a>
                             </div>
-                            <h1 class="heading mb-3" data-aos="fade-up" data-aos-duration="1400">How Can We Help You ?</h1>
-                            <p class="para-desc mx-auto text-muted" data-aos="fade-up" data-aos-duration="1800">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
-                        </div>
-                        <div class="subcribe-form mt-4 pt-2" data-aos="fade-up" data-aos-duration="2200">
-                            <form>
-                                <div class="mb-0">
-                                    <input type="text" id="help" name="name" class="form-control bg-white rounded-pill" required="" placeholder="Search the help center">
-                                    <button type="submit" class="btn btn-pills btn-primary">Search</button>
-                                </div>
-                            </form>
                         </div>
                     </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-6 mt-5 mt-sm-0">
+                        <img src="images/hero1.png" class="img-fluid" alt="">
+                    </div>
                 </div><!--end row-->
-            </div><!--end container--> 
+            </div> <!--end container-->
         </section><!--end section-->
         <!-- Hero End -->
 
-        <!-- Communiaction Priority Start -->
+        <!-- Partners start -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                        <img src="images/client/amazon.svg" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                        <img src="images/client/google.svg" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                        <img src="images/client/lenovo.svg" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                        <img src="images/client/paypal.svg" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                        <img src="images/client/shopify.svg" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                        <img src="images/client/spotify.svg" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Partners End -->
+        
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div class="section-title mb-4 pb-2">
-                            <span class="badge rounded-pill bg-success" data-aos="fade-up" data-aos-duration="1000">Features</span>
-                            <h4 class="title my-4" data-aos="fade-up" data-aos-duration="1400">Communication Resources</h4>
-                            <p class="text-muted para-desc mx-auto mb-0" data-aos="fade-up" data-aos-duration="1800">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                            <h4 class="title mb-4">What we do ?</h4>
+                            <p class="text-muted para-desc mb-0 mx-auto">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card categories text-center rounded border-0" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="card-body">
-                                <img src="images/icon/chat.svg" class="avatar avatar-small mb-3" alt="">
-                                <h5><a href="javascript:void(0)" class="text-dark">Live Chat</a></h5>
-                                <p class="text-muted mb-0 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making</p>
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-chart-line"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>Hign Performance</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                             </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-chart-line"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-crosshairs"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>Best Securities</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-crosshairs"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-airplay"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>Trusted Service</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-airplay"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-rocket"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>Info Technology</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-rocket"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-clock"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>24/7 Support</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-clock"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-users-alt"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>IT Management</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-users-alt"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-file-alt"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>Certified Company</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-file-alt"></i>
+                            </span>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <div class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                            <span class="h1 icon2 text-primary">
+                                <i class="uil uil-search"></i>
+                            </span>
+                            <div class="card-body p-0 content">
+                                <h5>Data Analytics</h5>
+                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            </div>
+                            <span class="big-icon text-center">
+                                <i class="uil uil-search"></i>
+                            </span>
                         </div>
                     </div><!--end col-->
 
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card categories text-center rounded border-0" data-aos="fade-up" data-aos-duration="1300">
-                            <div class="card-body">
-                                <img src="images/icon/customer-service.svg" class="avatar avatar-small mb-3" alt="">
-                                <h5><a href="javascript:void(0)" class="text-dark">Social</a></h5>
-                                <p class="text-muted mb-0 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card categories text-center rounded border-0" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="card-body">
-                                <img src="images/icon/user.svg" class="avatar avatar-small mb-3" alt="">
-                                <h5><a href="javascript:void(0)" class="text-dark">Support Portal</a></h5>
-                                <p class="text-muted mb-0 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card categories text-center rounded border-0" data-aos="fade-up" data-aos-duration="1900">
-                            <div class="card-body">
-                                <img src="images/icon/call.svg" class="avatar avatar-small mb-3" alt="">
-                                <h5><a href="javascript:void(0)" class="text-dark">Phone Supports</a></h5>
-                                <p class="text-muted mb-0 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card categories text-center rounded border-0" data-aos="fade-up" data-aos-duration="2200">
-                            <div class="card-body">
-                                <img src="images/icon/writing.svg" class="avatar avatar-small mb-3" alt="">
-                                <h5><a href="javascript:void(0)" class="text-dark">Tickets</a></h5>
-                                <p class="text-muted mb-0 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card categories text-center rounded border-0" data-aos="fade-up" data-aos-duration="2500">
-                            <div class="card-body">
-                                <img src="images/icon/mail.svg" class="avatar avatar-small mb-3" alt="">
-                                <h5><a href="javascript:void(0)" class="text-dark">FAQ's</a></h5>
-                                <p class="text-muted mb-0 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making</p>
-                            </div>
-                        </div>
+                    <div class="col-lg-12 text-center col-md-4 mt-4 pt-2">
+                        <a href="javascript:void(0)" class="btn btn-primary">See more <i data-feather="arrow-right" class="fea icon-sm"></i></a>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
 
+            <!-- About Start -->
             <div class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Need to CRM Support</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto" data-aos="fade-up" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                <div class="card work-container work-modern overflow-hidden rounded border-0 shadow-md">
+                                    <div class="card-body p-0">
+                                        <img src="images/course/online/ab01.jpg" class="img-fluid" alt="work-image">
+                                        <div class="overlay-work bg-dark"></div>
+                                        <div class="content">
+                                            <a href="javascript:void(0)" class="title text-white d-block fw-bold">Web Development</a>
+                                            <small class="text-light">IT & Software</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-12 mt-4 pt-2 text-center">
-                        <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded" data-aos="fade-up" data-aos-duration="1200" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link rounded active" id="community-tab" data-bs-toggle="pill" href="#pills-community" role="tab" aria-controls="pills-community" aria-selected="false">
-                                    <div class="text-center py-2">
-                                        <h6 class="mb-0">Community</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item">
-                                <a class="nav-link rounded" id="selfservice-tab" data-bs-toggle="pill" href="#pills-self" role="tab" aria-controls="pills-self" aria-selected="false">
-                                    <div class="text-center py-2">
-                                        <h6 class="mb-0">Self Service</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item">
-                                <a class="nav-link rounded" id="teamwork-tab" data-bs-toggle="pill" href="#pills-teamwork" role="tab" aria-controls="pills-teamwork" aria-selected="false">
-                                    <div class="text-center py-2">
-                                        <h6 class="mb-0">Teamwork</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                        </ul><!--end nav pills-->
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-12 mt-4 pt-2">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-community" role="tabpanel" aria-labelledby="community-tab">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6">
-                                        <img src="images/saas/classic04.png" data-aos="fade-up" data-aos-duration="1400" class="img-fluid mx-auto d-block shadow rounded" alt="">
+                            <div class="col-lg-6 col-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                        <div class="card work-container work-modern overflow-hidden rounded border-0 shadow-md">
+                                            <div class="card-body p-0">
+                                                <img src="images/course/online/ab02.jpg" class="img-fluid" alt="work-image">
+                                                <div class="overlay-work bg-dark"></div>
+                                                <div class="content">
+                                                    <a href="javascript:void(0)" class="title text-white d-block fw-bold">Michanical Engineer</a>
+                                                    <small class="text-light">Engineering</small>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div><!--end col-->
-
-                                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                        <div class="section-title ms-md-4">
-                                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">User Community</h4>
-                                            <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">CRM systems start by collecting a customer's website, email, telephone, social media data, and more, across multiple sources and channels. It may also automatically pull in other information, such as recent news about the company's activity, and it can store personal details, such as a client's personal preferences on communications.</p>
-                                            <div class="mt-4" data-aos="fade-up" data-aos-duration="1800">
-                                                <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded me-3">Read More <i class="uil uil-angle-right-b"></i></a>
-                                                <a href="javascript:void(0)" class="text-warning p-1 px-2 shadow rounded">Blogs</a>
+    
+                                    <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                        <div class="card work-container work-modern overflow-hidden rounded border-0 shadow-md">
+                                            <div class="card-body p-0">
+                                                <img src="images/course/online/ab03.jpg" class="img-fluid" alt="work-image">
+                                                <div class="overlay-work bg-dark"></div>
+                                                <div class="content">
+                                                    <a href="javascript:void(0)" class="title text-white d-block fw-bold">Chartered Accountant</a>
+                                                    <small class="text-light">C.A.</small>
+                                                </div>
                                             </div>
                                         </div>
                                     </div><!--end col-->
                                 </div><!--end row-->
-                            </div><!--end teb pane-->
-                            
-                            <div class="tab-pane fade" id="pills-self" role="tabpanel" aria-labelledby="selfservice-tab">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                        <div class="section-title me-md-4">
-                                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Self-service Portal</h4>
-                                            <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">CRM systems start by collecting a customer's website, email, telephone, social media data, and more, across multiple sources and channels. It may also automatically pull in other information, such as recent news about the company's activity, and it can store personal details, such as a client's personal preferences on communications.</p>
-                                            <div class="mt-4" data-aos="fade-up" data-aos-duration="1800">
-                                                <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded me-3">Read More <i class="uil uil-angle-right-b"></i></a>
-                                                <a href="javascript:void(0)" class="text-warning p-1 px-2 shadow rounded">Blogs</a>
-                                            </div>
-                                        </div>
-                                    </div>  <!--end col--> 
-
-                                    <div class="col-md-6 order-1 order-md-2">
-                                        <img src="images/saas/classic02.png" data-aos="fade-up" data-aos-duration="1400" class="img-fluid mx-auto d-block shadow rounded" alt="">
-                                    </div><!--end col-->  
-                                </div>    <!--end row-->                       
-                            </div><!--end teb pane-->
-
-                            <div class="tab-pane fade" id="pills-teamwork" role="tabpanel" aria-labelledby="teamwork-tab">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6">
-                                        <img src="images/saas/classic03.png" data-aos="fade-up" data-aos-duration="1400" class="img-fluid mx-auto d-block shadow rounded" alt="">
-                                    </div><!--end col-->
-
-                                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                        <div class="section-title ms-md-4">
-                                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Proper Teamwork</h4>
-                                            <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">CRM systems start by collecting a customer's website, email, telephone, social media data, and more, across multiple sources and channels. It may also automatically pull in other information, such as recent news about the company's activity, and it can store personal details, such as a client's personal preferences on communications.</p>
-                                            <div class="mt-4" data-aos="fade-up" data-aos-duration="1800">
-                                                <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded me-3">Read More <i class="uil uil-angle-right-b"></i></a>
-                                                <a href="javascript:void(0)" class="text-warning p-1 px-2 shadow rounded">Blogs</a>
-                                            </div>
-                                        </div>
-                                    </div>  <!--end col-->  
-                                </div>    <!--end row-->                        
-                            </div><!--end teb pane-->
-                        </div><!--end tab content-->
+                            </div><!--end col-->
+                        </div><!--end row-->
                     </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
 
-            <!-- Testi Start -->
-            <div class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Customer's Review</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto" data-aos="fade-up" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
-                        </div>
-                    </div>
-                </div><!--end row-->
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 mt-4 pt-2">
-                        <div class="tiny-three-item">
-                            <div class="tiny-slide">
-                                <div class="d-flex client-testi m-2" data-aos="fade-up" data-aos-duration="1000">
-                                    <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
-                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
-                                        <h6 class="text-primary">- Thomas Israel <small class="text-muted">C.E.O</small></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tiny-slide">
-                                <div class="d-flex client-testi m-2" data-aos="fade-up" data-aos-duration="1400">
-                                    <img src="images/client/02.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
-                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star-half text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "</p>
-                                        <h6 class="text-primary">- Barbara McIntosh <small class="text-muted">M.D</small></h6>
-                                    </div>
-                                </div>
+                    <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 pt- pt-lg-0">
+                        <div class="ms-lg-4">
+                            <div class="section-title mb-4 pb-2">
+                                <h4 class="title mb-4">About Our Story</h4>
+                                <p class="text-muted para-desc">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                                <p class="text-muted para-desc mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.</p>
                             </div>
 
-                            <div class="tiny-slide">
-                                <div class="d-flex client-testi m-2" data-aos="fade-up" data-aos-duration="1800">
-                                    <img src="images/client/03.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
-                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "</p>
-                                        <h6 class="text-primary">- Carl Oliver <small class="text-muted">P.A</small></h6>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-0"><span class="text-primary h4 me-2"><i class="uil uil-check-circle align-middle"></i></span>Fully Responsive</li>
+                                <li class="mb-0"><span class="text-primary h4 me-2"><i class="uil uil-check-circle align-middle"></i></span>Multiple Layouts</li>
+                                <li class="mb-0"><span class="text-primary h4 me-2"><i class="uil uil-check-circle align-middle"></i></span>Suits Your Style</li>
+                            </ul>
 
-                            <div class="tiny-slide">
-                                <div class="d-flex client-testi m-2" data-aos="fade-up" data-aos-duration="2200">
-                                    <img src="images/client/04.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
-                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero. "</p>
-                                        <h6 class="text-primary">- Christa Smith <small class="text-muted">Manager</small></h6>
-                                    </div>
-                                </div>
+                            <div class="mt-4 pt-2">
+                                <a href="https://1.envato.market/4n73n" target="_blank" class="btn btn-primary m-1">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="btn btn-icon btn-pills btn-primary m-1 lightbox"><i data-feather="video" class="icons"></i></a><span class="fw-bold text-uppercase small align-middle ms-1">Watch Now</span>
                             </div>
-
-                            <div class="tiny-slide">
-                                <div class="d-flex client-testi m-2" data-aos="fade-up" data-aos-duration="2400">
-                                    <img src="images/client/05.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
-                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" There is now an abundance of readable dummy texts. These are usually used when a text is required. "</p>
-                                        <h6 class="text-primary">- Dean Tolle <small class="text-muted">Developer</small></h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tiny-slide">
-                                <div class="d-flex client-testi m-2" data-aos="fade-up" data-aos-duration="2800">
-                                    <img src="images/client/06.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
-                                    <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. "</p>
-                                        <h6 class="text-primary">- Jill Webb <small class="text-muted">Designer</small></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-            <!-- Testi end -->
-
-            <!-- Submit Ticket Start -->
-            <div class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">Submit A Ticket</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto" data-aos="fade-up" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
                         </div>
                     </div>
                 </div><!--end row-->
-
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-5 col-12 mt-4 pt-2">
-                        <img src="images/customer/customer.svg" data-aos="fade-up" data-aos-duration="1400" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 col-md-7 col-12 mt-4 pt-2">
-                        <div class="card rounded shadow border-0 ms-lg-4" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="card-body p-4">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Your Name :</label>
-                                                <div class="form-icon position-relative">
-                                                    <i data-feather="user" class="fea icon-sm icons"></i>
-                                                    <input name="name" id="name" type="text" class="form-control ps-5" placeholder="First Name :">
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Your Email :</label>
-                                                <div class="form-icon position-relative">
-                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                    <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Your email :">
-                                                </div>
-                                            </div> 
-                                        </div><!--end col--> 
-        
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label class="form-label">Reasons / Categories :</label>
-                                                <select class="form-control custom-select" id="Sortbylist-Shop">
-                                                    <option>Categories</option>
-                                                    <option>General Question</option>
-                                                    <option>Bugs</option>
-                                                    <option>Remote</option>
-                                                </select>
-                                            </div>
-                                        </div><!--end col-->
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Subject :</label>
-                                                <div class="form-icon position-relative">
-                                                    <i data-feather="book" class="fea icon-sm icons"></i>
-                                                    <input name="subject" id="subject" class="form-control ps-5" placeholder="Your subject :">
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Url :</label>
-                                                <div class="form-icon position-relative">
-                                                    <i data-feather="globe" class="fea icon-sm icons"></i>
-                                                    <input name="url" id="url" type="url" class="form-control ps-5" placeholder="Url :">
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label class="form-label">Description :</label>
-                                                <div class="form-icon position-relative">
-                                                    <i data-feather="message-circle" class="fea icon-sm icons"></i>
-                                                    <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Describe your problem :"></textarea>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-        
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <input type="submit" id="submit" name="send" class="btn btn-primary" value="Submit">
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div><!--end container-->
-            <!-- Submit Ticket End -->
         </section><!--end section-->
-        <!-- Communiaction Priority End -->
+        
+        <!-- Start -->
+        <section class="section pt-0">
+            <div class="container">
+                <div class="p-4 rounded shadow bg-primary bg-gradient position-relative" style="z-index: 1;">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="progress-box">
+                                <h6 class="title text-light title-dark">Web Designing</h6>
+                                <div class="progress title-bg-dark" style="height: 10px; padding: 3px">
+                                    <div class="progress-bar position-relative bg-black" style="width:84%;">
+                                        <div class="progress-value d-block text-light title-dark h6">84%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-light title-dark">Web Development</h6>
+                                <div class="progress title-bg-dark" style="height: 10px; padding: 3px">
+                                    <div class="progress-bar position-relative bg-black" style="width:75%;">
+                                        <div class="progress-value d-block text-light title-dark h6">75%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-light title-dark">Game Development</h6>
+                                <div class="progress title-bg-dark" style="height: 10px; padding: 3px">
+                                    <div class="progress-bar position-relative bg-black" style="width:79%;">
+                                        <div class="progress-value d-block text-light title-dark h6">79%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                        </div><!--end col-->
+
+                        <div class="col-md-6 col-12">
+                            <div class="progress-box mt-4 mt-sm-0">
+                                <h6 class="title text-light title-dark">App Development</h6>
+                                <div class="progress title-bg-dark" style="height: 10px; padding: 3px">
+                                    <div class="progress-bar position-relative bg-black" style="width:84%;">
+                                        <div class="progress-value d-block text-light title-dark h6">84%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-light title-dark">Digital Marketing</h6>
+                                <div class="progress title-bg-dark" style="height: 10px; padding: 3px">
+                                    <div class="progress-bar position-relative bg-black" style="width:75%;">
+                                        <div class="progress-value d-block text-light title-dark h6">75%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-light title-dark">Full stack Development</h6>
+                                <div class="progress title-bg-dark" style="height: 10px; padding: 3px">
+                                    <div class="progress-bar position-relative bg-black" style="width:79%;">
+                                        <div class="progress-value d-block text-light title-dark h6">79%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                        </div><!--end col-->
+                    </div><!--end row -->
+                </div>
+
+                <div class="row mt-4 pt-2 position-relative" id="counter" style="z-index: 1;">
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <img src="images/illustrator/Asset190.svg" class="avatar avatar-small" alt="">
+                            <h2 class="mb-0 mt-4"><span class="counter-value" data-target="97">3</span>%</h2>
+                            <h6 class="counter-head text-muted">Happy Client</h6>
+                        </div><!--end counter box-->
+                    </div>
+
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <img src="images/illustrator/Asset189.svg" class="avatar avatar-small" alt="">
+                            <h2 class="mb-0 mt-4"><span class="counter-value" data-target="15">1</span>+</h2>
+                            <h6 class="counter-head text-muted">Awards</h6>
+                        </div><!--end counter box-->
+                    </div>
+
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <img src="images/illustrator/Asset192.svg" class="avatar avatar-small" alt="">
+                            <h2 class="mb-0 mt-4"><span class="counter-value" data-target="2">0</span>K</h2>
+                            <h6 class="counter-head text-muted">Job Placement</h6>
+                        </div><!--end counter box-->
+                    </div>
+
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <img src="images/illustrator/Asset187.svg" class="avatar avatar-small" alt="">
+                            <h2 class="mb-0 mt-4"><span class="counter-value" data-target="98">3</span>%</h2>
+                            <h6 class="counter-head text-muted">Project Complete</h6>
+                        </div><!--end counter box-->
+                    </div>
+                </div><!--end row-->
+                <div class="feature-posts-placeholder bg-light"></div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h6 class="text-primary">Work Process</h6>
+                            <h4 class="title mb-4">How do we works ?</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-md-4 mt-4 pt-2">
+                        <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-presentation-edit d-block rounded h3 mb-0"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="text-dark">Discussion</h5>
+                                <p class="text-muted mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 mt-md-5 pt-md-3 mt-4 pt-2">
+                        <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="text-dark">Strategy & Testing</h5>
+                                <p class="text-muted mb-0">Generators convallis odio, vel pharetra quam malesuada vel. Nam porttitor malesuada.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 mt-md-5 pt-md-5 mt-4 pt-2">
+                        <div class="card features feature-clean work-process bg-transparent d-none-arrow border-0 text-center">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-image-check d-block rounded h3 mb-0"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="text-dark">Reporting</h5>
+                                <p class="text-muted mb-0">Internet Proin tempus odio, vel pharetra quam malesuada vel. Nam porttitor malesuada.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-4">Our Mind Power</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team text-center border-0">
+                            <div class="position-relative">
+                                <img src="images/client/01.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+                            <div class="card-body py-3 px-0 content">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Ronny Jofra</a></h5>
+                                <small class="designation text-muted">C.E.O</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team text-center border-0">
+                            <div class="position-relative">
+                                <img src="images/client/04.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+                            <div class="card-body py-3 px-0 content">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Micheal Carlo</a></h5>
+                                <small class="designation text-muted">Director</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team text-center border-0">
+                            <div class="position-relative">
+                                <img src="images/client/02.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+                            <div class="card-body py-3 px-0 content">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Aliana Rosy</a></h5>
+                                <small class="designation text-muted">Manager</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team text-center border-0">
+                            <div class="position-relative">
+                                <img src="images/client/03.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+                            <div class="card-body py-3 px-0 content">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Sofia Razaq</a></h5>
+                                <small class="designation text-muted">Developer</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row align-items-center mb-4 pb-2">
+                    <div class="col-lg-6">
+                        <div class="section-title text-center text-lg-start">
+                            <h6 class="text-primary">Blog</h6>
+                            <h4 class="title mb-4 mb-lg-0">Reads Our Latest <br> News & Blog</h4>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6">
+                        <div class="section-title text-center text-lg-start">
+                            <p class="text-muted mb-0 mx-auto para-desc">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/blog/01.jpg" class="card-img-top rounded-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Design your apps in your own way</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/blog/02.jpg" class="card-img-top rounded-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">How apps is changing the IT world</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <div class="position-relative">
+                                <img src="images/blog/03.jpg" class="card-img-top rounded-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Smartest Applications for Business</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                    <a href="page-blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
 
         <!-- Footer Start -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                         <a href="#" class="logo-footer">
                             <img src="images/logo-light.png" height="24" alt="">
                         </a>
@@ -756,32 +924,32 @@
                         </ul><!--end icon-->
                     </div><!--end col-->
                     
-                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Company</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Team</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Pricing</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Features</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                            <li><a href="page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                            <li><a href="page-services.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
+                            <li><a href="page-team.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Team</a></li>
+                            <li><a href="page-pricing.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Pricing</a></li>
+                            <li><a href="page-portfolio-modern.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Project</a></li>
+                            <li><a href="page-jobs.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Careers</a></li>
+                            <li><a href="page-blog-grid.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                            <li><a href="auth-cover-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
                         </ul>
                     </div><!--end col-->
                     
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Usefull Links</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Protection</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Safe Payments</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Documentation</a></li>
-                            <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
+                            <li><a href="page-terms.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
+                            <li><a href="page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
+                            <li><a href="documentation.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Documentation</a></li>
+                            <li><a href="changelog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Changelog</a></li>
+                            <li><a href="components.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Components</a></li>
                         </ul>
                     </div><!--end col-->
 
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Newsletter</h5>
                         <p class="mt-4">Sign up and receive the latest tips via email.</p>
                         <form>
@@ -839,8 +1007,8 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
         <script src="js/tiny-slider.js "></script>
-        <!-- Animation -->
-        <script src="js/aos.js "></script>
+        <!-- tobii js -->
+        <script src="js/tobii.min.js "></script>
         <!-- Icons -->
         <script src="js/feather.min.js"></script>
         <!-- Main Js -->
